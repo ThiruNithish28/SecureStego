@@ -14,13 +14,16 @@
                 <!-- <img src="./image/images.png" alt="logo"> -->
                 <p>SecureStego</p>
             </div>
-            <div class="nav_list d-none d-md-block">
+            <div class="nav_list" data-visible="false" >
                 <ul class="d-flex gap-4">
                     <li><a href="#">home</a></li>
                     <li><a href="encode.html">encode</a></li>
                     <li><a href="decode.html">decode</a></li>
                 </ul>
             </div>
+            
+                <button class="toggle_btn d-lg-none d-md-block" aria-expanded="false"></button>
+            
         </div>
     </nav>
     <main>
@@ -141,6 +144,7 @@
         </div>
     </footer>
     <!--  -->
+    <script src="./index.js"></script>
  <script src="./assest/bootstrap/js/bootstrap.min.js"></script>
  <script src="./assest/bootstrap/js/jquery.min.js"></script>
 </body>

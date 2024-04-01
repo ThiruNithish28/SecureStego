@@ -223,3 +223,50 @@ footer{
 .footer_nav ul li>a {
     color: var(--grey-color);
 }
+
+@media (max-width: 768px) {
+    
+    .about{
+        flex-wrap: wrap;
+    }
+    h2 {
+        font-size: 4rem; 
+    }
+
+    .toggle_btn{
+        width: 4.3rem;
+        aspect-ratio: 1/1;
+        background: url(./svg/toogle.svg);
+        background-size:cover;
+        background-position: center;
+        border: 0;
+        outline: none;
+    }
+    .toggle_btn[aria-expanded ="true"]{
+        background: url(./svg/X-icon.svg);
+        background-size:cover;
+       
+    }
+    nav{
+        position: relative;
+    }
+    .nav_list{
+        background-color:#fff;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        padding: 20px 20px;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-out; 
+    }
+    .nav_list[data-visible ="true"]
+  {
+    transform: translateX(0%);
+  }
+  .nav_list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
