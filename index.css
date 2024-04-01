@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Architects+Daughter&family=Cardo:ital,wght@0,400;0,700;1,400&family=Great+Vibes&family=Kumbh+Sans:wght@100..900&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --body-ff:"Kumbh Sans", sans-serif;
+    --grey-color:#555;
+    --grey-bg:#55555519;
+    --grey-text:#444;
+    --nav-bg:#fff;
+}
+
+ul,li{
+    list-style: none;
+    text-transform: capitalize;
+
+}
+a{
+    text-decoration: none;
+}
+/* tropology  */
+h1{
+    font-size: 7rem;
+}
+h2{
+    font-size: 5.7rem;
+}
+h3{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+h4{
+    text-transform: capitalize;
+}
+h1,h2{
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* custom fonts */
+
+.pacifi-font{
+    font-family: "Pacifico", cursive;
+}
+.abril-font{
+    font-family:"Abril Fatface", serif;
+}
+.great-vibe-font{
+    font-family:"Great Vibes", cursive;
+}
+.cardo-font{
+    font-family:"Cardo", serif;
+}
+.arch-font{
+    font-family:  "Architects Daughter", cursive;
+}
+.abril-font,.arch-font,.cardo-font,.great-vibe-font,.pacifi-font{
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--body-ff);
+}
+nav{
+    /* border-bottom: 1px solid red; */
+    width: 100%;
+    background-color:var(--nav-bg) ;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav_container{
+    padding: 32px 16px;
+}
+.nav_list ul li > a {
+    color: var(--grey-color);
+    
+}
+.logo p{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.hero_container{
+    margin-top: 10.8rem;
+    padding: 4.5rem 1.6rem;
+}
+.hero_intro{
+    flex: 1 1 45%;
+}
+.hero-img{
+    flex: 1 1 45%;
+    width:100%;
+    height:600px;
+    background: url(./image/bigDream.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.services_about_sec{
+    padding: 6.5rem 1.6rem;
+    background-color:var(--grey-bg) ;
+}
+
+.services_about_sec .trusted p{
+    color: var(--grey-text);
+    text-align: center;
+}
+
+.services_about_sec .about{
+    padding-top: 3.5rem;
+}
+.about .about_heading{
+    flex: 1 1 50%;
+}
+.about .about_text{
+    flex: 1 1 50%;
+}
+.services_about_sec .services{
+    margin-top: 4rem;
+}
+.card {
+    padding: 4.2rem 2.3rem;
+    align-items: center;
+    text-align: center;
+}
+.card img{
+    width:8rem;
+    aspect-ratio: 1/1;
+}
+
+.instruction_sec{
+    background-color: #000;
+    color: #fff;
+}
+.instruction_sec h2{
+    text-align: center;
+}
+.instruction_sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 1.6rem;
+    
+}
+.instruction_sec div{
+    padding: 6rem 0;
+    width: 30rem;
+}
+.instruction_sec div > p{
+    color: #eeeeee7f;
+}
+.instruction_sec .step-number{
+    font-size: 3.2rem;
+    font-weight: bold;
+    width: fit-content;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial_sec{
+    padding: 5.5rem 1.6rem;
+}
+.testimonial_sec .big_heading{
+    flex: 1 1 50%;
+    font-size:4rem;
+    font-weight: bold;
+}
+.testimonial_sec .user-review_box{
+    flex: 1 1 40%;
+    border: 1px solid black;
+    width: max-content;
+    padding: 2.6rem 1.8rem;
+}
+.testimonial_sec .user-review_box > p{
+    font-size: 2.2rem;
+}
+.testimonial_sec .user-review_box img{
+    width:6rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.testimonial_sec .user-review_box div{
+    padding: 1rem .2rem;
+}
+.testimonial_sec .user-review_box div > p{
+    color: var(--grey-color);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.subscribe_sec{
+    padding: 4.5rem 1.6rem;
+    text-align: center;
+    background-color: var(--grey-bg);
+}
+.subscribe_sec h2{
+    font-size: 4rem;
+}
+/* .subscribe_sec .mail_input{
+    margin-top: 3rem;
+    width: 60rem;
+    border-radius: .9rem;
+} */
+
+footer{
+    padding: 3.5rem 1.6rem;
+}
+.footer_logo img{
+    width: 6rem;
+    aspect-ratio: 1/1;
+}
+.footer_nav ul li>a {
+    color: var(--grey-color);
+}
