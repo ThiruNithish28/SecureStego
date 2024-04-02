@@ -118,13 +118,14 @@
             </div>
         </div>
     </section>
-    <section class="subscribe_sec">
-        <div class="container ">
+    <section class="subscribe-sec">
+        <div class="container subscribe-sec__container">
             <h2>Stay Up-to-Date </h2>
             <p class="mb-4">Join our mailing list.</p>
-            
-            <input type="email" placeholder="Enter your email address">
-            <span><button class="subscribe_btn"> subscribe now</button></span>
+            <form id="subscribe-form">
+                <input type="email" name="email" placeholder="Enter your email" required class="subscribe-form__input">
+                <button type="submit" class="subscribe-form__btn">Subscribe</button>
+            </form>
             
         </div>
     </section>

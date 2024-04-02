@@ -67,6 +67,7 @@ h1,h2{
 body{
     font-size: 1.6rem;
     font-family: var(--body-ff);
+    overflow-x: hidden;
 }
 nav{
     /* border-bottom: 1px solid red; */
@@ -199,19 +200,42 @@ nav{
     margin: 0;
 }
 
-.subscribe_sec{
+.subscribe-sec{
     padding: 4.5rem 1.6rem;
-    text-align: center;
     background-color: var(--grey-bg);
 }
-.subscribe_sec h2{
+.subscribe-sec h2{
     font-size: 4rem;
 }
-/* .subscribe_sec .mail_input{
-    margin-top: 3rem;
-    width: 60rem;
-    border-radius: .9rem;
-} */
+.subscribe-sec__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#subscribe-form{
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+   
+}
+.subscribe-form__input {
+    border: 1px solid #ccc; 
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px; 
+  }
+  .subscribe-form__btn{
+  
+   padding: .45em .8em;
+   color: #fff;
+   outline: none;
+   border: 0;
+   border-radius: 20px;
+   background-color: #000;
+   position: absolute;
+   right:5px;
+   top: 4px;
+  }
 
 footer{
     padding: 3.5rem 1.6rem;
@@ -225,7 +249,6 @@ footer{
 }
 
 @media (max-width: 768px) {
-    
     .about{
         flex-wrap: wrap;
     }
