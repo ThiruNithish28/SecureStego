@@ -3,9 +3,19 @@ var inputImg;
 function readUrl(input){
     var reader = new FileReader();
     reader.onload = function(event) {
-        // console.log(event.target.result); 
-        imgUrl = event.target.result;
-        document.querySelector("#selectedImg").src = imgUrl;
+        imgUrl = event.target.result;  // get image url
+
+        // add img div, p tag dynamically
+        const imgContainer = document.querySelector('.selectimg_container');
+        const selectedImgDiv = document.createElement('img');
+        const headingPtag = document.createElement('p'); 
+        // add details 
+        headingPtag.textContent='selected img :';
+        selectedImgDiv.src=imgUrl;
+        // add to html page
+        imgContainer.appendChild(headingPtag);
+        imgContainer.appendChild(selectedImgDiv);
+      
     }; 
     inputImg=input.files[0];
     reader.readAsDataURL(inputImg);
@@ -13,10 +23,18 @@ function readUrl(input){
 
 var hiddenImg;
 function encode(){
-    const encodeImgDiv =document.querySelector("#encodeImg");
+    // encode the mesg using stego.encode() 
      hiddenImg = steg.encode(document.querySelector("#HiddenMsg").value,imgUrl);
-    encodeImgDiv.src =hiddenImg;
-
+     // add to encode img to hrml dynamically
+     const resultContainer =document.querySelector(".result_container");
+     const imgDiv = document.createElement('img');
+     const heading_pTag= document.createElement('p');
+     // add value to created element
+     heading_pTag.textContent='Result :';
+     imgDiv.src= hiddenImg;
+    // add to the html page
+    resultContainer.appendChild(heading_pTag);
+    resultContainer.appendChild(imgDiv);
 }
 
 const downloadButton = document.querySelector(".download_btn");

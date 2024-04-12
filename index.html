@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SecureStego</title>
     <link rel="stylesheet" href="./assest/bootstrap/css/bootstrap.min.css">
+    <!-- Aos style link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
@@ -28,12 +30,14 @@
     </nav>
     <main>
         <div class="container hero_container d-flex flex-wrap gap-5">
-            <div class="hero_intro ">
+            <div class="hero_intro" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <h1>Encode and Decode Hidden Messages </h1>
                 <p>Discover the power of secure steganography with SecureStego. Our sophisticated platform allows you to encode and decode messages within images seamlessly, ensuring your communications remain confidential and protected. </p>
-                <button>Get started</button>
+                <button class="btn">Get started</button>
             </div>
-            <div class="hero-img">
+            <div class="hero-img" >
                 
             </div>
         </div>
@@ -55,7 +59,7 @@
                 <div class="about_heading">
                     <p>Secure and Simple</p>
                     <h2>Effortless Steganography for Everyone </h2>
-                    <button>Get in touch</button>
+                    <button class="btn">Get in touch</button>
                 </div>
                 <div class="about_text">
                     <p>At SecureStego, we're committed to providing a seamless and user-friendly experience for encoding and decoding hidden messages within images. Our platform is built with state-of-the-art security in mind, ensuring your communications are protected at all times. With no login required, anyone can access our services easily. </p>
@@ -81,7 +85,7 @@
             </div>
         </div>
     </section>
-    <section class="instruction_sec  ">
+    <section class="instruction_sec">
         <h2>Getting Started is Simple</h2>
         
         <div>
@@ -148,5 +152,7 @@
     <script src="./index.js"></script>
  <script src="./assest/bootstrap/js/bootstrap.min.js"></script>
  <script src="./assest/bootstrap/js/jquery.min.js"></script>
+ <!-- AOS animation js file -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

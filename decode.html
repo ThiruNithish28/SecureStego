@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <!-- custom style -->
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,32 +19,52 @@
                     <!-- <img src="./image/images.png" alt="logo"> -->
                     <p>SecureStego</p>
                 </div>
-                <div class="nav_list" data-visible="false" >
+                <div class="nav_list" data-visible="false">
                     <ul class="d-flex gap-4">
                         <li><a href="index.html">home</a></li>
                         <li><a href="encode.html">encode</a></li>
                         <li><a href="decode.html">decode</a></li>
                     </ul>
                 </div>
-                
-                    <button class="toggle_btn d-lg-none d-md-block" aria-expanded="false"></button>
-                
+
+                <button class="toggle_btn d-lg-none d-md-block" aria-expanded="false"></button>
+
             </div>
         </nav>
     </header>
 
-    <main class="container mT-10 p-5">
-        <div>
-            <input type="file" name ="ImgToDecode" accept="image/*" onchange="readUrl(this)">
-           
+    <main class="container main_container mT-10 p-5">
+        <div class="decode_container">
+            <div class="m-2">
+                <input type="file" name="ImgToDecode" accept="image/*" onchange="readUrl(this)">
+
+            </div>
+
+            <div class="resMsg_container d-flex  gap-4">
+                <div class="img_container">
+                    <p>selected image</p>
+                    <div class="decode_selectImg">
+                        
+                    </div>
+                </div>
+
+                <div class="message_container">
+                    <p>hidden message :</p>
+                    <p class="result">
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="mt-3 d-flex justify-content-between">
+                <button id="decodebtn" class="btn">Decode</button>
+                <button class="btn">download</button>
+            </div>
         </div>
-        <button id="btn">Decode</button>
-        <p class="result">
-            
-        </p>
     </main>
     <script src="./decode.js"></script>
     <script src="./steganography.min.js"></script>
-   
+
 </body>
+
 </html>

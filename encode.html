@@ -29,20 +29,27 @@
             
         </div>
     </nav>
-    <main class="container main_container">
+    <main class="container main_container mT-10 p-5">
         <div class="input_container">
             <input type="file" name="imageToEncode" id="enocdeImage" accept="image/*" onchange="readUrl(this)">
-            <input type="text" name="hiddenMessage" id="HiddenMsg">
-            <button onclick="encode()">encode</button>
+            <div class="message_container">
+                <p style="font-weight: bold;">enter the message</p>
+               
+                <textarea name="hiddenMessage" id="HiddenMsg" cols="30" rows="3"></textarea>
+
+            </div>
+          
+
+            <button onclick="encode()" class="btn mt-2">encode</button>
+            <button class="download_btn btn mt-2" >download</button>
         </div>
-        <div>
-            selected img: 
-            <img src="" alt="selected image" id="selectedImg">
+        
+        <div class="selectimg_container">
+          
         </div>
-        <div>
-            Result:
-            <img src="" alt="result img" id ="encodeImg">
-            <button class="download_btn" >download</button>
+        <div class="result_container">
+          
+           
         </div>
     </main>
     <script src="./assest/bootstrap/js/bootstrap.min.js"></script>
