@@ -139,7 +139,10 @@ nav{
 .hero_intro{
     flex: 1 1 45%;
 }
-
+.intro-h1 {
+    width: 550px;
+    max-width: 90vw;
+}
 .intro-h1 span{
     display: inline-block;
 }
@@ -223,7 +226,7 @@ nav{
 } 
 
 .hero-img{
-    flex: 1 1 45%;
+    flex: 1 0 40%;
     width:100%;
     height:600px;
     background: url(./image/hero-section-img.jpg);
