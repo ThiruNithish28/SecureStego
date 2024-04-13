@@ -286,17 +286,19 @@ footer{
 
 .decode_container{
     width: 680px;
-    max-width: 100%;
+    max-width: 90vw;
 }
 
 /* decode  style*/
-
+.resMsg_container{
+    width: 100%;
+}
 
 .img_container{
-    flex:1 1 50%;
+    flex:1 1 40%;
 }
 .message_container{
-    flex: 1 1 50%;
+    flex: 1 1 40%;
 }
 @media (max-width: 768px) {
     .about{
@@ -320,9 +322,6 @@ footer{
         background-size:cover;
        
     }
-    nav{
-        position: relative;
-    }
     .nav_list{
         background-color:#fff;
         width: 100vw;
@@ -330,8 +329,8 @@ footer{
         padding: 20px 20px;
         position: absolute;
         top: 100px;
-        left: 10px;
-        transform: translateX(100%);
+        left: 0;
+        transform: translateX(200%);
         transition: transform 0.3s ease-out; 
     }
     .nav_list[data-visible ="true"]
