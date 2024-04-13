@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <nav>
         <div class="container nav_container d-flex justify-content-between">
@@ -16,33 +18,42 @@
                 <!-- <img src="./image/images.png" alt="logo"> -->
                 <p>SecureStego</p>
             </div>
-            <div class="nav_list" data-visible="false" >
-                <ul class="d-flex gap-4">
-                    <li><a href="#">home</a></li>
+            <div class="nav_list" data-visible="false">
+                <ul class="d-flex gap-5">
+                    <li><a href="index.html">home</a></li>
                     <li><a href="encode.html">encode</a></li>
                     <li><a href="decode.html">decode</a></li>
                 </ul>
             </div>
-            
-                <button class="toggle_btn d-lg-none d-md-block" aria-expanded="false"></button>
-            
+
+            <button class="toggle_btn d-lg-none d-md-block" aria-expanded="false"></button>
+
         </div>
     </nav>
     <main>
         <div class="container hero_container d-flex flex-wrap gap-5">
             <div class="hero_intro">
-                <h1>Encode and Decode Hidden Messages </h1>
-                <p>Discover the power of secure steganography with SecureStego. Our sophisticated platform allows you to encode and decode messages within images seamlessly, ensuring your communications remain confidential and protected. </p>
-                <button class="btn">Get started</button>
+                <h1 class="intro-h1 sevenAnimation">
+                    <span>E</span><span>n</span><span>c</span><span>o</span><span>d</span><span>e</span>
+                    <span>and</span> <br>
+                    <span>D</span><span>e</span><span>c</span><span>o</span><span>d</span><span>e</span>
+                    <span>H</span><span>i</span><span>d</span><span>d</span><span>e</span><span>n</span>
+                    <span>M</span><span>e</span><span>s</span><span>s</span><span>a</span><span>g</span><span>e</span><span>s</span>
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in">Discover the power of secure
+                    steganography with SecureStego. Our sophisticated platform allows you to encode and decode messages
+                    within images seamlessly, ensuring your communications remain confidential and protected. </p>
+                <button class="btn" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in">Get
+                    started</button>
             </div>
-            <div class="hero-img" >
-                
+            <div class="hero-img" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in">
+
             </div>
         </div>
     </main>
-    <section class="services_about_sec">
+    <section class="services_about_sec" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="linear">
         <div class="container">
-            <div class="trusted">
+            <div class="trusted" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
                 <p>Trusted by professionals and enthusiasts in over 100 countries </p>
                 <ul class="d-flex flex-wrap  justify-content-around">
                     <li class="pacifi-font ">secure</li>
@@ -54,28 +65,36 @@
             </div>
 
             <div class="about d-flex gap-5">
-                <div class="about_heading">
+                <div class="about_heading" data-aos="fade" data-aos-offset="400" data-aos-duration="2000"
+                    data-aos-easing="ease-in">
                     <p>Secure and Simple</p>
                     <h2>Effortless Steganography for Everyone </h2>
                     <button class="btn">Get in touch</button>
                 </div>
-                <div class="about_text">
-                    <p>At SecureStego, we're committed to providing a seamless and user-friendly experience for encoding and decoding hidden messages within images. Our platform is built with state-of-the-art security in mind, ensuring your communications are protected at all times. With no login required, anyone can access our services easily. </p>
+                <div class="about_text" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="400"
+                    data-aos-easing="linear">
+                    <p>At SecureStego, we're committed to providing a seamless and user-friendly experience for encoding
+                        and decoding hidden messages within images. Our platform is built with state-of-the-art security
+                        in mind, ensuring your communications are protected at all times. With no login required, anyone
+                        can access our services easily. </p>
                 </div>
             </div>
 
             <div class="services row gap-4">
-                <div class="card encode_card col-sm  gap-4 ">
+                <div class="card encode_card col-sm  gap-4 " data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-offset="400">
                     <img src="./svg/encode.svg" alt="encode">
                     <h3>Encode Effortlessly </h3>
                     <p>Hide messages in images within seconds. </p>
                 </div>
-                <div class="card decode_card col-sm gap-4">
+                <div class="card decode_card col-sm gap-4" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-offset="400">
                     <img src="./svg/decode.svg" alt="encode">
                     <h3>Decode Securely</h3>
                     <p>Extract hidden messages safely and quickly.</p>
                 </div>
-                <div class="card user_frd_card  col-sm gap-4">
+                <div class="card user_frd_card  col-sm gap-4" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-offset="400">
                     <img src="./svg/userFriendly.svg" alt="encode">
                     <h3>User-Friendly Interface</h3>
                     <p>Navigate easily with our intuitive design.</p>
@@ -83,20 +102,22 @@
             </div>
         </div>
     </section>
-    <section class="instruction_sec">
-        <h2>Getting Started is Simple</h2>
-        
-        <div>
+    <section class="instruction_sec" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="linear"
+        data-aos-offset="300">
+        <h2 data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in" data-aos-offset="400">Getting Started is
+            Simple</h2>
+
+        <div data-aos="fade-down" data-aos-duration="2000" data-aos-easing="linear" data-aos-offset="400">
             <div class="step-number">01</div>
             <h3>Choose Your Image</h3>
             <p>Select an image to start.</p>
         </div>
-        <div>
+        <div data-aos="fade-down" data-aos-duration="1000" data-aos-easing="linear" data-aos-offset="400">
             <div class="step-number">02</div>
             <h3>Encode or Decode</h3>
             <p>Decide whether to hide or reveal.</p>
         </div>
-        <div>
+        <div data-aos="fade-down" data-aos-duration="1000" data-aos-easing="linear" data-aos-offset="400">
             <div class="step-number">03</div>
             <h3>Download Your Image</h3>
             <p>Download the final secured image.</p>
@@ -104,11 +125,11 @@
     </section>
     <section class="testimonial_sec">
         <div class="container d-flex flex-wrap gap-5">
-            <p class="big_heading">
+            <p class="big_heading" data-aos="fade" data-aos-duration="1500" data-aos-easing="ease-in">
                 'SecureStego changed the game for my team's covert operations. Seamless, secure, essential.'
             </p>
-            <div class="user-review_box">
-                <img src="" alt="star">
+            <div class="user-review_box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="./image/rating.png" alt="rating">
                 <p>'Innovative and simple to use. An essential tool for secure communication.'</p>
                 <div class="user d-flex gap-2">
                     <img src="./image/john.jpg" alt="john Doe dp">
@@ -122,13 +143,15 @@
     </section>
     <section class="subscribe-sec">
         <div class="container subscribe-sec__container">
-            <h2>Stay Up-to-Date </h2>
+            <h2 data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="15000">Stay Up-to-Date
+            </h2>
             <p class="mb-4">Join our mailing list.</p>
-            <form id="subscribe-form">
+            <form id="subscribe-form" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                data-aos-duration="15000">
                 <input type="email" name="email" placeholder="Enter your email" required class="subscribe-form__input">
                 <button type="submit" class="subscribe-form__btn">Subscribe</button>
             </form>
-            
+
         </div>
     </section>
     <footer>
@@ -148,9 +171,13 @@
     </footer>
     <!--  -->
     <script src="./index.js"></script>
- <script src="./assest/bootstrap/js/bootstrap.min.js"></script>
- <script src="./assest/bootstrap/js/jquery.min.js"></script>
- <!-- AOS animation js file -->
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assest/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assest/bootstrap/js/jquery.min.js"></script>
+    <!-- AOS animation js file -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
