@@ -120,11 +120,14 @@ nav{
     border-radius: .2rem;
     transition: all 0.9s cubic-bezier(0, 0.32, 1, 1);
 }
-.nav_list ul li:hover,
 .nav_list ul li:hover::after{
+    width: 100%;
+}
+.nav_list ul li:hover
+{
     color:black;
     font-weight: bold;
-    width: 100%;
+
 }
 
 .logo p{
@@ -448,38 +451,6 @@ footer{
 	}
 }
 
-.fade{
-    animation: hideAndShow 1s ease-out forwards; /* Animation duration: 1 second */
-  }
-@keyframes hideAndShow {
-    0% {
-      opacity: 0; /* Start with full transparency (hidden) */
-    }
-    50% {
-      opacity: 0; /* Stay hidden for half of the duration */
-    }
-    100% {
-      opacity: 1; /* End with full opacity (shown) */
-    }
-  }
-
-.type-animation{
-    overflow: hidden;
-    animation: typeAnimation 3s steps(20) infinite alternate;
-}
-@keyframes typeAnimation {
-    0% {
-        width: 0;
-    }
-    10%{
-        width:20%;
-    }
-    100%{
-        width:100%;
-    }
-    
-  }
-
 @media (max-width: 768px) {
     .about{
         flex-wrap: wrap;
@@ -520,5 +491,10 @@ footer{
   .nav_list ul {
     flex-direction: column;
     align-items: center;
+  }
+
+  .nav_list ul li::after{
+    width: 0;
+    height: 0;
   }
 }
